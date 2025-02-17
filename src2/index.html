@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Interface</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container" id="container1" style="top: 50px; left: 50px;"></div>
+
+    <div class="container" id="container2" style="top: 300px; left: 500px;"></div>
+    <button id="craftButton" style="top: 500px; left: 500px;" onclick="craft()">Craft</button>
+
+    <div class="container" id="container3" style="top: 333px; left: 800px;">
+        <div class="outputSlot">
+            <img src="hexagon.svg" alt="" class="slot-image">
+            <!-- <div class="item" draggable="true">
+                <img src="hexagon.svg" alt="" class="item-image">
+            </div> -->
+        </div>
+    </div>
+
+    <div id="tooltip" class="tooltip">
+        <!-- <canvas id="tasteChart" style="display: block; width: 50px; height: 50px;"></canvas> -->
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="tooltip.js"></script>
+    <script src="crafting.js"></script>
+    <script src="additems.js"></script>
+    <script src="script.js"></script>
+</body>
+
+
+</html>

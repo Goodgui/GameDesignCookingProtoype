@@ -1,0 +1,42 @@
+function addTestItems() {
+    const testItems = [
+        {'Name': 'Red Mushroom', 'Type': 'Bowl', 'Adjective': 'Earthy', 'Flavor': 'None', 'Hearty': '7', 'Tasty': '1', 'Healthy': '5'},
+        {'Name': 'Blackberry', 'Type': 'Bowl', 'Adjective': 'Sweet', 'Flavor': 'None', 'Hearty': '6', 'Tasty': '5', 'Healthy': '10'},
+        {'Name': 'Garlic', 'Type': 'None', 'Adjective': 'None', 'Flavor': 'None', 'Hearty': '2', 'Tasty': '5', 'Healthy': '10'},
+        {'Name': 'Elderberry', 'Type': 'Bowl', 'Adjective': 'Sweet', 'Flavor': 'None', 'Hearty': '2', 'Tasty': '8', 'Healthy': '6'},
+        {'Name': 'White Mushroom', 'Type': 'Bowl', 'Adjective': 'Earthy', 'Flavor': 'None', 'Hearty': '2', 'Tasty': '1', 'Healthy': '2'},
+        {'Name': 'Boar', 'Type': 'Plate', 'Adjective': 'Meaty', 'Flavor': 'None', 'Hearty': '5', 'Tasty': '9', 'Healthy': '8'},
+        {'Name': 'Venison', 'Type': 'Plate', 'Adjective': 'Meaty', 'Flavor': 'None', 'Hearty': '4', 'Tasty': '6', 'Healthy': '7'},
+        {'Name': 'Rabbit', 'Type': 'Plate', 'Adjective': 'Meaty', 'Flavor': 'None', 'Hearty': '5', 'Tasty': '8', 'Healthy': '7'},
+        {'Name': 'Turkey', 'Type': 'Plate', 'Adjective': 'Meaty', 'Flavor': 'None', 'Hearty': '6', 'Tasty': '3', 'Healthy': '9'},
+        {'Name': 'Blue Mushroom', 'Type': 'Bowl', 'Adjective': 'Earthy', 'Flavor': 'None', 'Hearty': '3', 'Tasty': '7', 'Healthy': '3'},
+        {'Name': 'Duck', 'Type': 'Plate', 'Adjective': 'Meaty', 'Flavor': 'None', 'Hearty': '8', 'Tasty': '1', 'Healthy': '3'},
+        {'Name': 'Apple', 'Type': 'Bowl', 'Adjective': 'Fruity', 'Flavor': 'None', 'Hearty': '2', 'Tasty': '1', 'Healthy': '10'},
+        {'Name': 'Grapes', 'Type': 'Bowl', 'Adjective': 'Fruity', 'Flavor': 'None', 'Hearty': '4', 'Tasty': '6', 'Healthy': '5'},
+        {'Name': 'Plum', 'Type': 'Bowl', 'Adjective': 'Sweet', 'Flavor': 'None', 'Hearty': '7', 'Tasty': '9', 'Healthy': '3'},
+        {'Name': 'Pear', 'Type': 'Bowl', 'Adjective': 'Sweet', 'Flavor': 'None', 'Hearty': '9', 'Tasty': '9', 'Healthy': '8'},
+        {'Name': 'Orange', 'Type': 'Bowl', 'Adjective': 'Fruity', 'Flavor': 'None', 'Hearty': '5', 'Tasty': '2', 'Healthy': '2'},
+        {'Name': 'Carrot', 'Type': 'Bowl', 'Adjective': 'Earthy', 'Flavor': 'None', 'Hearty': '8', 'Tasty': '6', 'Healthy': '4'},
+        {'Name': 'Radish', 'Type': 'Bowl', 'Adjective': 'Earthy', 'Flavor': 'None', 'Hearty': '4', 'Tasty': '7', 'Healthy': '8'},
+        {'Name': 'Turnip', 'Type': 'Bowl', 'Adjective': 'Earthy', 'Flavor': 'None', 'Hearty': '7', 'Tasty': '4', 'Healthy': '2'},
+        {'Name': 'Beet', 'Type': 'Bowl', 'Adjective': 'Earthy', 'Flavor': 'None', 'Hearty': '2', 'Tasty': '1', 'Healthy': '6'},
+        {'Name': 'Yam', 'Type': 'Bowl', 'Adjective': 'Earthy', 'Flavor': 'None', 'Hearty': '1', 'Tasty': '4', 'Healthy': '1'},
+        {'Name': 'Egg', 'Type': 'Bowl', 'Adjective': 'Yolky', 'Flavor': 'None', 'Hearty': '9', 'Tasty': '0', 'Healthy': '8'},
+        {'Name': 'Wheat', 'Type': 'Bowl', 'Adjective': 'Clean', 'Flavor': 'None', 'Hearty': '10', 'Tasty': '2', 'Healthy': '5'},
+        {'Name': 'Barley', 'Type': 'Bowl', 'Adjective': 'Clean', 'Flavor': 'None', 'Hearty': '10', 'Tasty': '4', 'Healthy': '3'},
+        {'Name': 'Oat', 'Type': 'Bowl', 'Adjective': 'Clean', 'Flavor': 'None', 'Hearty': '5', 'Tasty': '4', 'Healthy': '1'},
+        {'Name': 'Rice', 'Type': 'Bowl', 'Adjective': 'Clean', 'Flavor': 'None', 'Hearty': '4', 'Tasty': '7', 'Healthy': '6'},
+        {'Name': 'Water', 'Type': 'Soup', 'Adjective': 'Clean', 'Flavor': 'None', 'Hearty': '2', 'Tasty': '4', 'Healthy': '8'},
+        {'Name': 'Milk', 'Type': 'Soup', 'Adjective': 'Creamy', 'Flavor': 'None', 'Hearty': '5', 'Tasty': '4', 'Healthy': '6'},
+        {'Name': 'Beer', 'Type': 'Soup', 'Adjective': 'Boozy', 'Flavor': 'None', 'Hearty': '2', 'Tasty': '8', 'Healthy': '2'},
+        {'Name': 'Sake', 'Type': 'Soup', 'Adjective': 'Boozy', 'Flavor': 'None', 'Hearty': '2', 'Tasty': '10', 'Healthy': '4'},
+        {'Name': 'Sochu', 'Type': 'Soup', 'Adjective': 'Smooth', 'Flavor': 'None', 'Hearty': '5', 'Tasty': '5', 'Healthy': '10'},
+        {'Name': 'Sweet Onion', 'Type': 'Bowl', 'Adjective': 'Spicy', 'Flavor': 'None', 'Hearty': '4', 'Tasty': '5', 'Healthy': '8'},
+        {'Name': 'Yellow Onion', 'Type': 'Bowl', 'Adjective': 'Spicy', 'Flavor': 'None', 'Hearty': '1', 'Tasty': '5', 'Healthy': '6'},
+        {'Name': 'Red Onion', 'Type': 'Bowl', 'Adjective': 'Spicy', 'Flavor': 'None', 'Hearty': '7', 'Tasty': '1', 'Healthy': '9'},
+        {'Name': 'Thyme', 'Type': 'None', 'Adjective': 'None', 'Flavor': 'None', 'Hearty': '7', 'Tasty': '5', 'Healthy': '6'},
+        {'Name': 'Cloves', 'Type': 'None', 'Adjective': 'None', 'Flavor': 'None', 'Hearty': '3', 'Tasty': '2', 'Healthy': '9'}
+    ];
+
+    testItems.forEach(itemData => addItemToInventory(itemData));
+}

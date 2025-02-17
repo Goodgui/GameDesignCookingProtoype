@@ -1,0 +1,194 @@
+:root {
+    --clr-primary: #1e1e1e;
+    --clr-secondary: #333333;
+    --clr-accent: #494949;
+    --clr-light: #606060;
+    --clr-text: #e0e0e0;
+
+    --background-color: var(--clr-primary);
+    --text-color: var(--clr-text);
+    --header-background: var(--clr-secondary);
+    --header-text-color: var(--clr-text);
+    --project-background: var(--clr-accent);
+    --project-border: var(--clr-light);
+    --shadow-color: rgba(0, 0, 0, 0.1);
+
+    --hex-size: 75px;
+}
+
+html {
+    background-color: var(--background-color);
+    color: var(--text-color);
+
+    user-select: none;
+    -webkit-user-drag: none;
+    -moz-user-drag: none;
+
+    font-family: 'arial', sans-serif;
+
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--clr-primary);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--clr-secondary);
+    border-radius: 10px;
+    border: 3px solid var(--clr-primary);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--clr-accent);
+}
+
+::-webkit-scrollbar-corner {
+    background: var(--clr-primary);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+
+#container1 {
+    width: 300px;
+    height: 90vh;
+    overflow: scroll;
+}
+
+.slot-image {
+    width: var(--hex-size);
+    height: var(--hex-size);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.item-image {
+    width: var(--hex-size);
+    height: var(--hex-size);
+    border-radius: 50%;
+    pointer-events: none;
+
+    display: none;
+}
+
+.item {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: var(--hex-size); */
+    /* height: var(--hex-size); */
+    width: 75%;
+    height: 75%;
+
+    z-index: 1;
+
+    border-radius: 50%;
+    border: 3px solid #b6232356;
+
+    cursor: grab;
+
+    /* overflow: hidden; */
+}
+
+.item-label {
+    position: absolute;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    pointer-events: none;
+}
+
+
+.slot,
+.craftingSlot,
+.outputSlot {
+
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: var(--hex-size + 4px);
+    width: var(--hex-size + 4px);
+    border-radius: 50%;
+
+    /* border: 3px solid #e0e0e038; */
+}
+
+button {
+    border: none;
+    outline: none;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+
+    background-color: #3e3e3e;
+    color: var(--clr-text);
+
+    font-size: 20px;
+
+    width: 200px;
+    height: 40px;
+
+    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2),
+        0 2px 2px 0 rgba(0, 0, 0, 0.14),
+        0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    transition: background-color 0.1s, box-shadow 0.1s;
+}
+
+button:hover {
+    background-color: #494949;
+    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2),
+        0 4px 5px 0 rgba(0, 0, 0, 0.14),
+        0 1px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+button:active {
+    background-color: var(--clr-accent);
+    transform: translateY(1px);
+}
+
+.tooltip {
+    position: absolute;
+    background-color: var(--clr-secondary);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.2s ease-in-out;
+    z-index: 1000;
+
+    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2),
+        0 2px 2px 0 rgba(0, 0, 0, 0.14),
+        0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
