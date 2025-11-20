@@ -1,15 +1,18 @@
-Cooking System Game Design:
+# Cooking Game Prototype
+
+[Open Web Version](https://goodgui.github.io/GameDesignCookingProtoype)
+
 Goals:
 - Intuitive for new players
 - Simple enough that it is not annoying
 - Interesting/Fun enough that it's not a chore
 - Meaningful to gameplay, but not critical aside from basic survival mechanics
 - Ability for players to experiment
-- Semi-Realistic. So things carrot + onion + flour are not a good combination
+- Semi-Realistic. So combinations like carrot + onion + flour are not good options
 
 Basic Mechanics:
 food items will fall into one of these categories:
-Base ingredient: Ingredients that are foraged, or come into Gensokyo from the real world and are not able to be crafted
+Base ingredient: Ingredients that are foraged or found in the world
 main ingredient: An ingredient that is crafted from base ingredients
 meal: A final result made from ingredients that cannot be processed further
 
@@ -39,7 +42,6 @@ Caffeine        0-10
 Alcohol         0-10
 Calories        0-10
 
-
 **Main values:**
 Tasty - How many taste values are balanced
 0 - Awful 
@@ -64,8 +66,7 @@ Healthy - How many health values are balanced
 Hearty (How many calories it has)
 0 - 10 calories
 
-
-Ingredient mixes:
+T1 ingredients
 mushroom
 berry
 herb
@@ -80,7 +81,6 @@ liquid
 
 T2 ingredients
 Flour
-
 
 T3 ingredients
 Dough
